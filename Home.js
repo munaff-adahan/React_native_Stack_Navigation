@@ -10,7 +10,10 @@ export function HomeUi({ navigation }) {
   return ui;
 
   function goToProfile() {
-    navigation.navigate("Profile");
+
+    const obj = {"name":"sahan","mobile":"0771234567"};
+
+    navigation.navigate("Profile",obj);
   }
 }
 

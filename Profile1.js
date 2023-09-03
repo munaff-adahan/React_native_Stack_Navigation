@@ -1,10 +1,12 @@
 import { StyleSheet, Text, SafeAreaView } from "react-native";
 
-export function ProfileUi({navigation}) {
+export function ProfileUi({navigation,route}) {
 
   const ui = (
     <SafeAreaView style={styles.container}>
       <Text style={styles.text1}>Profile</Text>
+      <Text>{route.params.name}</Text>
+      <Text>{route.params.mobile}</Text>
     </SafeAreaView>
   );
   
